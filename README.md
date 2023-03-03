@@ -1,3 +1,3 @@
 # SmartBrain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![My Image](img1.png)![My Image](img2.png)
