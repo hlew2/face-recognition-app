@@ -31,7 +31,7 @@ class Register extends React.Component {
     this.setState({ displayInvalidCredentialsMessageEmail: false });
     this.setState({ displayInvalidCredentialsMessagePassword: false });
     this.setState({ displayFieldRequiredMessage: false });
-    fetch('http://localhost:3001/register', {
+    fetch(process.env.SERVER_URL + '/register', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({

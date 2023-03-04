@@ -24,7 +24,7 @@ class Signin extends React.Component {
   onSubmitSignIn = () => {
     this.setState({ displayInvalidCredentialsMessage: false });
     this.setState({ displayCompleteFieldsMessage: false });
-    fetch('http://localhost:3001/signin', {
+    fetch(process.env.SERVER_URL + '/signin', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({

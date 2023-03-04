@@ -138,7 +138,7 @@ class App extends Component {
       this.setState(
         { input: JSON.parse(localStorage.getItem('imageUrl')) },
         () => {
-          fetch('http://localhost:3001/imageurl', {
+          fetch(process.env.SERVER_URL + '/imageurl', {
             method: 'post',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({
@@ -166,7 +166,7 @@ class App extends Component {
     });
     event.target.previousSibling.value = '';
     if (this.state.input !== '') {
-      fetch('http://localhost:3001/imageurl', {
+      fetch(process.env.SERVER_URL + '/imageurl', {
         method: 'post',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
@@ -177,7 +177,7 @@ class App extends Component {
         .then((response) => {
           if (response) {
             this.setState({ input: '' });
-            fetch('http://localhost:3001/image', {
+            fetch(process.env.SERVER_URL + '/image', {
               method: 'put',
               headers: { 'content-type': 'application/json' },
               body: JSON.stringify({
