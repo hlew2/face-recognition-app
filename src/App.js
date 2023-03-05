@@ -138,7 +138,7 @@ class App extends Component {
       this.setState(
         { input: JSON.parse(localStorage.getItem('imageUrl')) },
         () => {
-          fetch(process.env.SERVER_URL_IMAGEURL, {
+          fetch('https://smart-brain-api-1ywf.onrender.com/imageurl', {
             method: 'post',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({
@@ -166,7 +166,7 @@ class App extends Component {
     });
     event.target.previousSibling.value = '';
     if (this.state.input !== '') {
-      fetch(process.env.SERVER_URL_IMAGEURL, {
+      fetch('https://smart-brain-api-1ywf.onrender.com/imageurl', {
         method: 'post',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
@@ -177,7 +177,7 @@ class App extends Component {
         .then((response) => {
           if (response) {
             this.setState({ input: '' });
-            fetch(process.env.SERVER_URL_IMAGE, {
+            fetch('https://smart-brain-api-1ywf.onrender.com/image', {
               method: 'put',
               headers: { 'content-type': 'application/json' },
               body: JSON.stringify({

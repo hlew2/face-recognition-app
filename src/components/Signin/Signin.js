@@ -24,7 +24,7 @@ class Signin extends React.Component {
   onSubmitSignIn = () => {
     this.setState({ displayInvalidCredentialsMessage: false });
     this.setState({ displayCompleteFieldsMessage: false });
-    fetch(process.env.SERVER_URL_SIGNIN, {
+    fetch('https://smart-brain-api-1ywf.onrender.com/signin', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
