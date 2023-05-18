@@ -1,6 +1,6 @@
 # SmartBrain
 
-∙ Fully responsive full-stack face recognition web application with log in functionality built using React.
+∙ Fully responsive full-stack face recognition web application with log in functionality built using React that features CRUD operations.
 <br>
 ∙ It utilises the Clarifai API specifically the face detection AI model, that detects the location of human faces in images uploaded via URL by the user.
 <br>
