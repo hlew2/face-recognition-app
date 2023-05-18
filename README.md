@@ -10,7 +10,7 @@
 <br>
 <br>
 <p align="center">
-  <img src="./img1.png" width="45%">
+  [<img src="./img1.png" width="45%">](https://smart-brain-face-recognition-app.onrender.com/)
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./img2.png" width="45%">
+  [<img src="./img2.png" width="45%">](https://smart-brain-face-recognition-app.onrender.com/)
 </p>
